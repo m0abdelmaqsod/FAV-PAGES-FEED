@@ -1,0 +1,149 @@
+@use '../../../components/sidebar_right/friend.module' as *;
+@use '../../../home/emoji.nodule' as *;
+
+
+
+
+.suggestions {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2%;
+
+    .friend_suggestions {
+        background-color: #fff;
+        border-radius: 5px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #9a9fbf56;
+
+            h6 {
+                font-size: 15px;
+            }
+
+            .dotBtn {
+                font-size: 20px;
+                color: #9a9fbf;
+                cursor: pointer;
+            }
+        }
+
+        .friend {
+            display: flex;
+            align-items: center;
+            padding: 23px 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid #9a9fbf56;
+
+            .div_friend {
+                display: flex;
+
+
+                .image {
+                    img {
+                        @include img (20px, 50%);
+                    }
+                }
+
+                .data {
+                    overflow: hidden;
+
+                    a {
+                        @include a(#000, 14px, 3px, #ff5e3a);
+                        cursor: pointer;
+                    }
+
+                    h6 {
+                        @include h6 (#989dbd, 11px);
+                    }
+                }
+            }
+
+            .emojiBtn {
+                @include emoji (#4CB1FF, #fff, 40px, 40px, -10px, 5px);
+
+                .icon {
+                    @include icon (25px);
+                }
+
+                .plus {
+                    @include plus (-3px, 1px, 15px);
+                }
+
+                &:hover{
+                    background-color: #4cb1ffde;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    .pages_you_may_like {
+        background-color: #fff;
+        border-radius: 5px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #9a9fbf56;
+
+            h6 {
+                font-size: 15px;
+            }
+
+            .dotBtn {
+                font-size: 20px;
+                color: #9a9fbf;
+                cursor: pointer;
+            }
+        }
+
+        .pages {
+            display: flex;
+            align-items: center;
+            padding: 23px 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid #9a9fbf56;
+
+            .div_pages {
+                display: flex;
+
+
+                .image {
+                    img {
+                        @include img (20px, 50%);
+                    }
+                }
+
+                .data {
+                    overflow: hidden;
+
+                    a {
+                        @include a(#000, 14px, 3px, #ff5e3a);
+                        cursor: pointer;
+                    }
+
+                    h6 {
+                        @include h6 (#989dbd, 11px);
+                    }
+                }
+            }
+
+            .starBtn {
+                .icon {
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

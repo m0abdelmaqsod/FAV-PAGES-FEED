@@ -1,0 +1,27 @@
+.main {
+  padding: 18vh 0;
+  background-color: #EDF2F6;
+}
+.main .fav_pages_feed {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+}
+
+@media (max-width: 425px) {
+  .main {
+    padding: 15vh 0;
+  }
+  .main .fav_pages_feed {
+    width: 95%;
+    grid-template-columns: 1fr;
+    row-gap: 3%;
+  }
+  .main .fav_pages_feed .recent_updates {
+    display: grid;
+    grid-row: 1;
+  }
+}/*# sourceMappingURL=home.module.css.map */

@@ -1,0 +1,515 @@
+@use './friend.module' as *;
+
+
+
+.sidebar_right,
+.open {
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    overflow: hidden;
+    right: 0;
+    top: 67px;
+    transition: 0.5s;
+    background-color: #fff;
+    z-index: 1;
+
+
+    .div_sidebar_right {
+        transition: 0.5s;
+        height: 67vh;
+        overflow: scroll;
+        // box-shadow: 0px -0px 40px #313131;
+
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+
+        .close_friends_none {
+            display: none;
+        }
+
+        .close_friends {
+            padding: 5px 0;
+            border-bottom: 1px solid #9a9fbf56;
+            border-top: 1px solid #9a9fbf56;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+
+                .friends {
+                    color: #ff5e3a;
+                }
+
+                li {
+
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .friend {
+            display: flex;
+            align-items: center;
+            padding: 13px 20px;
+            justify-content: space-between;
+
+
+            .div_friend {
+                display: flex;
+                // align-items: center;
+
+                .image {
+                    position: relative;
+
+                    img {
+                        @include img (20px, 50%);
+                    }
+
+                    .span_colot_online {
+                        @include span(#32e2cc, 50%)
+                    }
+
+                    .span_colot_atwork {
+                        @include span(rgb(0, 250, 0), 50%)
+                    }
+
+                    .span_colot_away {
+                        @include span(orange, 50%)
+                    }
+
+                    .span_colot_offline {
+                        @include span(red, 50%)
+                    }
+
+                    .span_colot_invisible {
+                        @include span(#494c62, 50%)
+                    }
+                }
+
+                .none_data {
+                    display: none;
+                }
+
+                .data {
+                    cursor: pointer;
+
+                    // overflow: hidden;
+
+                    a {
+                        @include a(#494c62, 12px, 5px, #ff5e3a);
+
+                    }
+
+                    h6 {
+                        @include h6 (#989dbd, 6px);
+                    }
+                }
+
+            }
+
+            .dotBtn {
+                font-size: 20px;
+                color: #989dbd;
+                position: relative;
+                right: -10px;
+                cursor: pointer;
+
+                &:hover .hover_dotBtn {
+                    width: 160px;
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
+
+
+
+
+            .hover_dotBtn {
+                width: 0px;
+                font-size: 23px;
+                padding: 3px 10px;
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                right: 30px;
+                top: -0px;
+                background-color: #fff;
+                opacity: 0;
+                transition: 0.5s;
+                transition-delay: 0.2s;
+            }
+        }
+    }
+
+
+    .lcose_olympus_chat {
+        position: relative;
+
+        .form_icon_closr {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+
+            .form {
+                display: flex;
+
+                input {
+                    width: 85%;
+                    background-color: #fff;
+                    border: 1px solid #9a9fbf67;
+                    padding: 8px 10px;
+                    border-radius: 5px;
+                    outline: none;
+                    color: #000;
+                }
+            }
+
+            .form_none {
+                display: none;
+            }
+
+            .icon_settings {
+                margin: 0 20px;
+            }
+
+            .icon_settings_none {
+                display: none;
+            }
+
+            .icon_settings,
+            button {
+                font-size: 25px;
+                color: #989dbd;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #ff5e3a;
+                    transition: 0.5s;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                margin: 0;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btnOpen {
+                display: none;
+            }
+
+            .btnClose {
+                display: flex;
+            }
+        }
+
+
+
+        .olympus_chat_icon {
+            a {
+                background-color: blueviolet;
+                padding: 30px 20px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+            }
+
+            .none_h6 {
+                display: none;
+            }
+
+
+
+            .h6_chat,
+            .icon_chat {
+                color: #fff;
+                transition: 0.5s;
+
+                &:hover {
+                    transition: 0.5s;
+                    color: #ff5e3a;
+                }
+            }
+        }
+    }
+}
+
+// .chat {
+//     background-color: #e29032;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 44vh;
+//     // height: 0vh;
+//     width: 25%;
+//     z-index: 1;
+//     overflow: hidden;
+//     transition: 0.5s;
+
+//     .name_chat {
+//         background-color: blueviolet;
+//         padding: 20px;
+//         display: flex;
+//         justify-content: space-between;
+
+
+//         .span_name {
+//             display: flex;
+//             align-items: center;
+
+//             .span_colot_online {
+//                 background-color: #32e2cc;
+//                 width: 8px;
+//                 height: 8px;
+//                 border-radius: 50%;
+//                 margin-right: 10px;
+//             }
+
+//             h6 {
+//                 color: #fff;
+//                 font-size: 14px;
+//             }
+//         }
+
+
+//         .icon_chat {
+//             display: flex;
+//             color: #fff;
+
+//             .dotBtn {
+//                 margin-right: 15px;
+//                 cursor: pointer;
+//             }
+
+//         }
+
+//         .pody_chat {
+//             display: flex;
+//             background-color: #ff5e3a;
+
+//             p {
+//                 background-color: #32e2cc;
+//             }
+//         }
+
+//         .list_bar_bottom_chat {
+//             background-color: blueviolet;
+
+//             textarea {
+
+//             }
+//         }
+//     }
+// }
+
+
+
+.sidebar_right {
+    animation-name: widthClose;
+    animation-duration: 1.5s;
+}
+
+@keyframes widthClose {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+
+.open {
+    width: 5%;
+    animation-name: widthPoen;
+    animation-duration: 1s;
+
+
+}
+
+@keyframes widthPoen {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===== Responsiv ==== //
+
+@media (max-width: 425px) {
+
+
+    .btnSidebarResponsiv {
+        background-color: #ff5e3a;
+        padding: 20px;
+        font-size: 26px;
+        border: none;
+        position: absolute;
+        position: fixed;
+        color: #fff;
+        right: 0;
+        z-index: 1;
+    }
+
+    .btnOpen {
+        display: none;
+    }
+
+    .btnClose {
+        display: flex;
+    }
+
+    .sidebar_right,
+    .open {
+        width: 60%;
+    }
+
+    // .chat {
+    //     background-color: #e29032;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     height: 44vh;
+    //     // height: 0vh;
+    //     width: 25%;
+    //     z-index: 1;
+    //     overflow: hidden;
+    //     transition: 0.5s;
+
+    //     .name_chat {
+    //         background-color: blueviolet;
+    //         padding: 20px;
+    //         display: flex;
+    //         justify-content: space-between;
+
+
+    //         .span_name {
+    //             display: flex;
+    //             align-items: center;
+
+    //             .span_colot_online {
+    //                 background-color: #32e2cc;
+    //                 width: 8px;
+    //                 height: 8px;
+    //                 border-radius: 50%;
+    //                 margin-right: 10px;
+    //             }
+
+    //             h6 {
+    //                 color: #fff;
+    //                 font-size: 14px;
+    //             }
+    //         }
+
+
+    //         .icon_chat {
+    //             display: flex;
+    //             color: #fff;
+
+    //             .dotBtn {
+    //                 margin-right: 15px;
+    //                 cursor: pointer;
+    //             }
+
+    //         }
+
+    //         .pody_chat {
+    //             display: flex;
+    //             background-color: #ff5e3a;
+
+    //             p {
+    //                 background-color: #32e2cc;
+    //             }
+    //         }
+
+    //         .list_bar_bottom_chat {
+    //             background-color: blueviolet;
+
+    //             textarea {
+
+    //             }
+    //         }
+    //     }
+    // }
+
+
+
+    .sidebar_right {
+        animation-name: widthClose;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes widthClose {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+
+
+    .open {
+        width: 0%;
+        animation-name: widthPoen;
+        animation-duration: 1.5s;
+
+
+    }
+
+    @keyframes widthPoen {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 0%;
+        }
+    }
+
+}

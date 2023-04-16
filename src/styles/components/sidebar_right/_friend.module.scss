@@ -1,0 +1,48 @@
+@mixin image {
+    position: relative;
+}
+
+@mixin img ($mr, $br) {
+    border-radius: $br;
+    margin-right: $mr;
+}
+
+@mixin span ($bgColor, $br) {
+    width: 8px;
+    height: 8px;
+    background-color: $bgColor;
+    position: absolute;
+    left: 0;
+    border-radius: $br;
+}
+
+
+
+@mixin a($color, $fs, $mb, $hover) {
+    font-size: $fs;
+    font-weight: bolder;
+    color: $color;
+    margin-bottom: $mb;
+    transition: 0.5s;
+
+
+    &:hover {
+        color: $hover;
+        transition: 0.5s;
+    }
+}
+
+
+@mixin h6 ($color, $fs) {
+    color: $color;
+    font-size: $fs;
+}
+
+
+
+@mixin arrowBtn {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}

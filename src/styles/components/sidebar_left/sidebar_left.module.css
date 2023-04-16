@@ -1,0 +1,382 @@
+.sidebar_left,
+.open {
+  border-right: 1px solid rgba(154, 159, 191, 0.2862745098);
+  width: 20%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  transition: 0.5s;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+}
+.sidebar_left::-webkit-scrollbar,
+.open::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.sidebar_left .btnOpenResponsiv,
+.open .btnOpenResponsiv {
+  display: none;
+}
+.sidebar_left a .logo,
+.open a .logo {
+  background-color: #ff5e3a;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.sidebar_left a .logo img,
+.open a .logo img {
+  margin-right: 25px;
+}
+.sidebar_left a .logo h6,
+.open a .logo h6 {
+  font-size: 16px;
+  color: #fff;
+}
+.sidebar_left .div_you_acciunt,
+.open .div_you_acciunt {
+  display: none;
+}
+.sidebar_left .listing,
+.open .listing {
+  background-color: #fff;
+  padding: 30px 25px;
+}
+.sidebar_left .listing ul li,
+.open .listing ul li {
+  padding-bottom: 25px;
+}
+.sidebar_left .listing ul li button,
+.open .listing ul li button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sidebar_left .listing ul li .btnOpen,
+.open .listing ul li .btnOpen {
+  display: none;
+}
+.sidebar_left .listing ul li .btnClose,
+.open .listing ul li .btnClose {
+  display: flex;
+}
+.sidebar_left .listing ul li button,
+.sidebar_left .listing ul li a,
+.open .listing ul li button,
+.open .listing ul li a {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  color: #9a9fbf;
+  transition: 0.2s;
+}
+.sidebar_left .listing ul li button div,
+.sidebar_left .listing ul li a div,
+.open .listing ul li button div,
+.open .listing ul li a div {
+  font-size: 25px;
+  margin-right: 25px;
+  transition: 0.2s;
+}
+.sidebar_left .listing ul li button span,
+.sidebar_left .listing ul li a span,
+.open .listing ul li button span,
+.open .listing ul li a span {
+  height: 20px;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.2s;
+}
+.sidebar_left .listing ul li button:hover,
+.sidebar_left .listing ul li a:hover,
+.open .listing ul li button:hover,
+.open .listing ul li a:hover {
+  color: #ff5e3a;
+  transition: 0.2s;
+}
+.sidebar_left .listing ul li button:hover span,
+.sidebar_left .listing ul li a:hover span,
+.open .listing ul li button:hover span,
+.open .listing ul li a:hover span {
+  color: #000;
+  transition: 0.2s;
+}
+.sidebar_left .list_you_acciunt,
+.open .list_you_acciunt {
+  display: none;
+}
+
+.sidebar_left {
+  animation-name: widthClose;
+  animation-duration: 1.5s;
+}
+
+@keyframes widthClose {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+.open {
+  width: 5%;
+  animation-name: widthPoen;
+  animation-duration: 1s;
+}
+
+@keyframes widthPoen {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .sidebar_left,
+  .open {
+    width: 50%;
+    height: 100vh;
+    border: none;
+  }
+  .sidebar_left a .logo,
+  .open a .logo {
+    background-color: #ff5e3a;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .sidebar_left a .logo img,
+  .open a .logo img {
+    margin-right: 25px;
+  }
+  .sidebar_left .btnOpenResponsiv,
+  .open .btnOpenResponsiv {
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 67px;
+    background-color: transparent;
+    border: none;
+  }
+  .sidebar_left .div_you_acciunt,
+  .open .div_you_acciunt {
+    display: grid;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt,
+  .open .div_you_acciunt .you_acciunt {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt .image,
+  .open .div_you_acciunt .you_acciunt .image {
+    position: relative;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt .image img,
+  .open .div_you_acciunt .you_acciunt .image img {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt .image span,
+  .open .div_you_acciunt .you_acciunt .image span {
+    width: 8px;
+    height: 8px;
+    background-color: #32e2cc;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt .data,
+  .open .div_you_acciunt .you_acciunt .data {
+    display: flex;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt .data a h5,
+  .open .div_you_acciunt .you_acciunt .data a h5 {
+    font-size: 14px;
+    color: #3e404d;
+    margin-bottom: 3px;
+  }
+  .sidebar_left .div_you_acciunt .you_acciunt .data a h6,
+  .open .div_you_acciunt .you_acciunt .data a h6 {
+    font-size: 10px;
+    color: #989dbd;
+  }
+  .sidebar_left .div_you_acciunt .main_sections h6,
+  .open .div_you_acciunt .main_sections h6 {
+    padding: 10px 25px;
+    color: #9a9fbf;
+    font-size: 13px;
+  }
+  .sidebar_left .listing,
+  .open .listing {
+    padding: 30px 25px;
+    overflow: hidden;
+  }
+  .sidebar_left .listing ul li,
+  .open .listing ul li {
+    padding-bottom: 25px;
+  }
+  .sidebar_left .listing ul li button,
+  .open .listing ul li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .sidebar_left .listing ul li .btnOpen,
+  .open .listing ul li .btnOpen {
+    display: none;
+  }
+  .sidebar_left .listing ul li .btnClose,
+  .open .listing ul li .btnClose {
+    display: flex;
+  }
+  .sidebar_left .listing ul li button,
+  .sidebar_left .listing ul li a,
+  .open .listing ul li button,
+  .open .listing ul li a {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    color: #9a9fbf;
+    transition: 0.2s;
+  }
+  .sidebar_left .listing ul li button div,
+  .sidebar_left .listing ul li a div,
+  .open .listing ul li button div,
+  .open .listing ul li a div {
+    font-size: 25px;
+    margin-right: 25px;
+    transition: 0.2s;
+  }
+  .sidebar_left .listing ul li button span,
+  .sidebar_left .listing ul li a span,
+  .open .listing ul li button span,
+  .open .listing ul li a span {
+    height: 20px;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.2s;
+  }
+  .sidebar_left .listing ul li button:hover,
+  .sidebar_left .listing ul li a:hover,
+  .open .listing ul li button:hover,
+  .open .listing ul li a:hover {
+    color: #ff5e3a;
+    transition: 0.2s;
+  }
+  .sidebar_left .listing ul li button:hover span,
+  .sidebar_left .listing ul li a:hover span,
+  .open .listing ul li button:hover span,
+  .open .listing ul li a:hover span {
+    color: #000;
+    transition: 0.2s;
+  }
+  .sidebar_left .list_you_acciunt,
+  .open .list_you_acciunt {
+    display: grid;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .sidebar_left .list_you_acciunt .navListRequests,
+  .open .list_you_acciunt .navListRequests {
+    padding: 10px 25px;
+    color: #9a9fbf;
+    font-size: 13px;
+  }
+  .sidebar_left .list_you_acciunt .navListRequests h6,
+  .open .list_you_acciunt .navListRequests h6 {
+    font-size: 13px;
+    color: #989dbd;
+  }
+  .sidebar_left .list_you_acciunt ul li a,
+  .open .list_you_acciunt ul li a {
+    display: flex;
+    font-weight: bold;
+    color: rgba(73, 76, 98, 0.8156862745);
+    transition: 0.5s;
+    padding: 20px;
+  }
+  .sidebar_left .list_you_acciunt ul li a div,
+  .open .list_you_acciunt ul li a div {
+    margin-right: 15px;
+    color: #989dbd;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar_left .list_you_acciunt ul li a p,
+  .open .list_you_acciunt ul li a p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .sidebar_left .list_you_acciunt ul li a:hover,
+  .open .list_you_acciunt ul li a:hover {
+    color: #ff5e3a;
+    transition: 0.5s;
+  }
+  .sidebar_left .list_you_acciunt .about_olympus,
+  .open .list_you_acciunt .about_olympus {
+    display: grid;
+    padding: 20px;
+  }
+  .sidebar_left .list_you_acciunt .about_olympus ul li,
+  .open .list_you_acciunt .about_olympus ul li {
+    margin-bottom: 20px;
+  }
+  .sidebar_left .list_you_acciunt .about_olympus ul li a,
+  .open .list_you_acciunt .about_olympus ul li a {
+    font-weight: bold;
+    color: rgba(63, 66, 87, 0.8235294118);
+    font-size: 16px;
+    transition: 0.5s;
+    padding: 0;
+  }
+  .sidebar_left .list_you_acciunt .about_olympus ul li a:hover,
+  .open .list_you_acciunt .about_olympus ul li a:hover {
+    color: #ff5e3a;
+    transition: 0.5s;
+  }
+  .sidebar_left {
+    animation-name: widthClose;
+    animation-duration: 1.5s;
+  }
+  @keyframes widthClose {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  .open {
+    width: 15%;
+    height: 66px;
+    animation-name: widthPoen;
+    animation-duration: 1s;
+  }
+  .open .div_you_acciunt,
+  .open .listing,
+  .open .list_you_acciunt {
+    padding: 0;
+    width: 0;
+  }
+  @keyframes widthPoen {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+}/*# sourceMappingURL=sidebar_left.module.css.map */

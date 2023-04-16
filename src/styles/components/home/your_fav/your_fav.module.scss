@@ -1,0 +1,103 @@
+.favourite_page {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3vh;
+
+
+    .div_create_page {
+        background-color: #ff5e3a;
+        padding: 20px;
+        color: #fff;
+
+
+        .nav_create {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-bottom: 85px;
+        }
+
+        p {
+            font-size: 28px;
+            width: 95%;
+        }
+
+        ul {
+            li {
+                margin: 20px 0;
+
+                a {
+                    background-color: #3F4257;
+                    padding: 8px 25px;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: #3f4257e1;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .your_fav_pages {
+        background-color: #fff;
+        border-radius: 5px;
+
+
+        .nav_create {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            h6 {
+                font-size: 15px;
+                color: #000000c5;
+            }
+
+            span {
+                color: #9A9FBF;
+                cursor: pointer;
+            }
+        }
+
+        .your_fav {
+            padding: 25px 20px;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                column-gap: 5px;
+                row-gap: 10px;
+
+                li {
+                    a {
+                        img {
+                            border-radius: 50%;
+                        }
+
+                        p {
+                            background-color: #ff5e3a;
+                            color: #fff;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 11px;
+                            font-weight: bold;
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}

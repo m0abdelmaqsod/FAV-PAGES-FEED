@@ -1,0 +1,52 @@
+@use '../components/sidebar_right/friend.module' as *;
+@use 'emoji.nodule' as *;
+
+.main {
+    padding: 18vh 0;
+    background-color: #EDF2F6;
+    // position: relative;
+
+
+
+
+    .fav_pages_feed {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        // grid-template-columns: 23% auto 23%;
+        column-gap: 3%;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+// ====== Responsiv ===== //
+@media (max-width: 425px) {
+    .main {
+        padding: 15vh 0;
+
+        .fav_pages_feed {
+            width: 95%;
+            grid-template-columns: 1fr;
+            row-gap: 3%;
+
+
+            .recent_updates {
+                display: grid;
+                grid-row: 1;
+            }
+
+        }
+    }
+}

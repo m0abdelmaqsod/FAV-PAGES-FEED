@@ -1,0 +1,24 @@
+@mixin emoji ($bgColor,$color,$wigth,$height,$right,$br){
+    background-color: $bgColor;
+    color: $color;
+    width: $wigth;
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: $right;
+    border-radius: $br;
+    cursor: pointer;
+}
+
+@mixin icon ($fs){
+    font-size: $fs;
+}
+
+@mixin plus($top,$right,$fs) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    font-size: $fs;
+}

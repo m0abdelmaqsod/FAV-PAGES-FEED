@@ -1,0 +1,337 @@
+.sidebar_right,
+.open {
+  position: absolute;
+  height: 100vh;
+  width: 20%;
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  top: 67px;
+  transition: 0.5s;
+  background-color: #fff;
+  z-index: 1;
+}
+.sidebar_right .div_sidebar_right,
+.open .div_sidebar_right {
+  transition: 0.5s;
+  height: 67vh;
+  overflow: scroll;
+}
+.sidebar_right .div_sidebar_right::-webkit-scrollbar,
+.open .div_sidebar_right::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.sidebar_right .div_sidebar_right .close_friends_none,
+.open .div_sidebar_right .close_friends_none {
+  display: none;
+}
+.sidebar_right .div_sidebar_right .close_friends,
+.open .div_sidebar_right .close_friends {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.337254902);
+  border-top: 1px solid rgba(154, 159, 191, 0.337254902);
+}
+.sidebar_right .div_sidebar_right .close_friends ul,
+.open .div_sidebar_right .close_friends ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.sidebar_right .div_sidebar_right .close_friends ul .friends,
+.open .div_sidebar_right .close_friends ul .friends {
+  color: #ff5e3a;
+}
+.sidebar_right .div_sidebar_right .close_friends ul li a,
+.open .div_sidebar_right .close_friends ul li a {
+  font-size: 11px;
+}
+.sidebar_right .div_sidebar_right .friend,
+.open .div_sidebar_right .friend {
+  display: flex;
+  align-items: center;
+  padding: 13px 20px;
+  justify-content: space-between;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend,
+.open .div_sidebar_right .friend .div_friend {
+  display: flex;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image,
+.open .div_sidebar_right .friend .div_friend .image {
+  position: relative;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image img,
+.open .div_sidebar_right .friend .div_friend .image img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image .span_colot_online,
+.open .div_sidebar_right .friend .div_friend .image .span_colot_online {
+  width: 8px;
+  height: 8px;
+  background-color: #32e2cc;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image .span_colot_atwork,
+.open .div_sidebar_right .friend .div_friend .image .span_colot_atwork {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(0, 250, 0);
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image .span_colot_away,
+.open .div_sidebar_right .friend .div_friend .image .span_colot_away {
+  width: 8px;
+  height: 8px;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image .span_colot_offline,
+.open .div_sidebar_right .friend .div_friend .image .span_colot_offline {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .image .span_colot_invisible,
+.open .div_sidebar_right .friend .div_friend .image .span_colot_invisible {
+  width: 8px;
+  height: 8px;
+  background-color: #494c62;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .none_data,
+.open .div_sidebar_right .friend .div_friend .none_data {
+  display: none;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .data,
+.open .div_sidebar_right .friend .div_friend .data {
+  cursor: pointer;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .data a,
+.open .div_sidebar_right .friend .div_friend .data a {
+  font-size: 12px;
+  font-weight: bolder;
+  color: #494c62;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .data a:hover,
+.open .div_sidebar_right .friend .div_friend .data a:hover {
+  color: #ff5e3a;
+  transition: 0.5s;
+}
+.sidebar_right .div_sidebar_right .friend .div_friend .data h6,
+.open .div_sidebar_right .friend .div_friend .data h6 {
+  color: #989dbd;
+  font-size: 6px;
+}
+.sidebar_right .div_sidebar_right .friend .dotBtn,
+.open .div_sidebar_right .friend .dotBtn {
+  font-size: 20px;
+  color: #989dbd;
+  position: relative;
+  right: -10px;
+  cursor: pointer;
+}
+.sidebar_right .div_sidebar_right .friend .dotBtn:hover .hover_dotBtn,
+.open .div_sidebar_right .friend .dotBtn:hover .hover_dotBtn {
+  width: 160px;
+  opacity: 1;
+  transition: 0.5s;
+}
+.sidebar_right .div_sidebar_right .friend .hover_dotBtn,
+.open .div_sidebar_right .friend .hover_dotBtn {
+  width: 0px;
+  font-size: 23px;
+  padding: 3px 10px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 30px;
+  top: 0px;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.sidebar_right .lcose_olympus_chat,
+.open .lcose_olympus_chat {
+  position: relative;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr,
+.open .lcose_olympus_chat .form_icon_closr {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .form,
+.open .lcose_olympus_chat .form_icon_closr .form {
+  display: flex;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .form input,
+.open .lcose_olympus_chat .form_icon_closr .form input {
+  width: 85%;
+  background-color: #fff;
+  border: 1px solid rgba(154, 159, 191, 0.4039215686);
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  color: #000;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .form_none,
+.open .lcose_olympus_chat .form_icon_closr .form_none {
+  display: none;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .icon_settings,
+.open .lcose_olympus_chat .form_icon_closr .icon_settings {
+  margin: 0 20px;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .icon_settings_none,
+.open .lcose_olympus_chat .form_icon_closr .icon_settings_none {
+  display: none;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .icon_settings,
+.sidebar_right .lcose_olympus_chat .form_icon_closr button,
+.open .lcose_olympus_chat .form_icon_closr .icon_settings,
+.open .lcose_olympus_chat .form_icon_closr button {
+  font-size: 25px;
+  color: #989dbd;
+  transition: 0.5s;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .icon_settings:hover,
+.sidebar_right .lcose_olympus_chat .form_icon_closr button:hover,
+.open .lcose_olympus_chat .form_icon_closr .icon_settings:hover,
+.open .lcose_olympus_chat .form_icon_closr button:hover {
+  color: #ff5e3a;
+  transition: 0.5s;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr button,
+.open .lcose_olympus_chat .form_icon_closr button {
+  background-color: transparent;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .btnOpen,
+.open .lcose_olympus_chat .form_icon_closr .btnOpen {
+  display: none;
+}
+.sidebar_right .lcose_olympus_chat .form_icon_closr .btnClose,
+.open .lcose_olympus_chat .form_icon_closr .btnClose {
+  display: flex;
+}
+.sidebar_right .lcose_olympus_chat .olympus_chat_icon a,
+.open .lcose_olympus_chat .olympus_chat_icon a {
+  background-color: blueviolet;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.sidebar_right .lcose_olympus_chat .olympus_chat_icon .none_h6,
+.open .lcose_olympus_chat .olympus_chat_icon .none_h6 {
+  display: none;
+}
+.sidebar_right .lcose_olympus_chat .olympus_chat_icon .h6_chat,
+.sidebar_right .lcose_olympus_chat .olympus_chat_icon .icon_chat,
+.open .lcose_olympus_chat .olympus_chat_icon .h6_chat,
+.open .lcose_olympus_chat .olympus_chat_icon .icon_chat {
+  color: #fff;
+  transition: 0.5s;
+}
+.sidebar_right .lcose_olympus_chat .olympus_chat_icon .h6_chat:hover,
+.sidebar_right .lcose_olympus_chat .olympus_chat_icon .icon_chat:hover,
+.open .lcose_olympus_chat .olympus_chat_icon .h6_chat:hover,
+.open .lcose_olympus_chat .olympus_chat_icon .icon_chat:hover {
+  transition: 0.5s;
+  color: #ff5e3a;
+}
+
+.sidebar_right {
+  animation-name: widthClose;
+  animation-duration: 1.5s;
+}
+
+@keyframes widthClose {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+.open {
+  width: 5%;
+  animation-name: widthPoen;
+  animation-duration: 1s;
+}
+
+@keyframes widthPoen {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .btnSidebarResponsiv {
+    background-color: #ff5e3a;
+    padding: 20px;
+    font-size: 26px;
+    border: none;
+    position: absolute;
+    position: fixed;
+    color: #fff;
+    right: 0;
+    z-index: 1;
+  }
+  .btnOpen {
+    display: none;
+  }
+  .btnClose {
+    display: flex;
+  }
+  .sidebar_right,
+  .open {
+    width: 60%;
+  }
+  .sidebar_right {
+    animation-name: widthClose;
+    animation-duration: 1.5s;
+  }
+  @keyframes widthClose {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  .open {
+    width: 0%;
+    animation-name: widthPoen;
+    animation-duration: 1.5s;
+  }
+  @keyframes widthPoen {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+}/*# sourceMappingURL=sidebar_right.module.css.map */

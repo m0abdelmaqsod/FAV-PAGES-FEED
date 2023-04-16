@@ -1,0 +1,136 @@
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2%;
+}
+.suggestions .friend_suggestions {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.suggestions .friend_suggestions .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.337254902);
+}
+.suggestions .friend_suggestions .title h6 {
+  font-size: 15px;
+}
+.suggestions .friend_suggestions .title .dotBtn {
+  font-size: 20px;
+  color: #9a9fbf;
+  cursor: pointer;
+}
+.suggestions .friend_suggestions .friend {
+  display: flex;
+  align-items: center;
+  padding: 23px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.337254902);
+}
+.suggestions .friend_suggestions .friend .div_friend {
+  display: flex;
+}
+.suggestions .friend_suggestions .friend .div_friend .image img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.suggestions .friend_suggestions .friend .div_friend .data {
+  overflow: hidden;
+}
+.suggestions .friend_suggestions .friend .div_friend .data a {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  margin-bottom: 3px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.suggestions .friend_suggestions .friend .div_friend .data a:hover {
+  color: #ff5e3a;
+  transition: 0.5s;
+}
+.suggestions .friend_suggestions .friend .div_friend .data h6 {
+  color: #989dbd;
+  font-size: 11px;
+}
+.suggestions .friend_suggestions .friend .emojiBtn {
+  background-color: #4CB1FF;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.suggestions .friend_suggestions .friend .emojiBtn .icon {
+  font-size: 25px;
+}
+.suggestions .friend_suggestions .friend .emojiBtn .plus {
+  position: absolute;
+  top: -3px;
+  right: 1px;
+  font-size: 15px;
+}
+.suggestions .friend_suggestions .friend .emojiBtn:hover {
+  background-color: rgba(76, 177, 255, 0.8705882353);
+}
+.suggestions .pages_you_may_like {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.suggestions .pages_you_may_like .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.337254902);
+}
+.suggestions .pages_you_may_like .title h6 {
+  font-size: 15px;
+}
+.suggestions .pages_you_may_like .title .dotBtn {
+  font-size: 20px;
+  color: #9a9fbf;
+  cursor: pointer;
+}
+.suggestions .pages_you_may_like .pages {
+  display: flex;
+  align-items: center;
+  padding: 23px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.337254902);
+}
+.suggestions .pages_you_may_like .pages .div_pages {
+  display: flex;
+}
+.suggestions .pages_you_may_like .pages .div_pages .image img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.suggestions .pages_you_may_like .pages .div_pages .data {
+  overflow: hidden;
+}
+.suggestions .pages_you_may_like .pages .div_pages .data a {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000;
+  margin-bottom: 3px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.suggestions .pages_you_may_like .pages .div_pages .data a:hover {
+  color: #ff5e3a;
+  transition: 0.5s;
+}
+.suggestions .pages_you_may_like .pages .div_pages .data h6 {
+  color: #989dbd;
+  font-size: 11px;
+}
+.suggestions .pages_you_may_like .pages .starBtn .icon {
+  font-size: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=suggestions.module.css.map */
